@@ -3,9 +3,19 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "bootstrap": "^4.3.1",
+    "lazy": "^1.0.11",
+    "lodash-es": "^4.17.15",
     "react": "^16.9.0",
+    "react-bootstrap": "^1.0.0-beta.12",
+    "react-clamp": "^1.0.5",
     "react-dom": "^16.9.0",
-    "react-scripts": "3.1.1"
+    "react-hooks": "^1.0.1",
+    "react-scripts": "3.1.1",
+    "react-spring": "^8.0.27",
+    "react-use-gesture": "^6.0.1",
+    "react-with-gesture": "^4.0.8",
+    "set": "^1.1.1"
   },
   "scripts": {
     "start": "react-scripts start",

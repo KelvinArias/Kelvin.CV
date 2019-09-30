@@ -1,0 +1,10 @@
+.logo{
+    width: 40px;
+    animation: rota 60s infinite alternate ease-in;
+    position: relative;
+}
+@keyframes rota{
+    to{
+        transform:rotate(3600deg);
+    }
+}
