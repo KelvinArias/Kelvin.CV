@@ -37,9 +37,15 @@ const Tool = props => {
 }
   
 const Tools = props => {
-    const socials = props.data.map(
-      (element,i) => <Tool rut={element} key={i} />
-    );
+    let socials;
+    try {
+      socials = props.data.map(
+        (element,i) => <Tool rut={element} key={i} />
+      );
+    }
+    catch(error) {
+      socials = <p style={{color:"#000"}}>Sin sociales</p>
+    }
     return(
       <div className="tools d-flex align-items-center justify-content-center">
         {socials}

@@ -70,62 +70,50 @@ body {
 }
 /*.cont 1*/
 .cont:nth-child(1) .viewPager.open::before{
-    border-color: #06719b #06719b transparent transparent;
+    border-color: black black transparent transparent;
 }
 .cont:nth-child(1) .viewPager::after{
-    background: #0591c9;
+    background: black;
 }
 .cont:nth-child(1) .viewPager{
-    background: linear-gradient(120deg, #0591c9 60%, white 100%);
+    background: linear-gradient(120deg, black 60%, white 100%);
 }
 .cont:nth-child(1) .viewPager::before{
-    border-color:transparent #06719b #06719b transparent;
+    border-color:transparent black black transparent;
 }
 
-/*.cont 2*/
+/* .cont2*/
 
-.cont:nth-child(4) .viewPager.open::before{
-    border-color: #01324f #01324f transparent transparent;
+.cont:nth-child(2) .viewPager.open::before{
+    border-color: #03a8a0 #03a8a0 transparent transparent;
 }
-.cont:nth-child(4) .viewPager::after{
-    background: #003A5D;
+.cont:nth-child(2) .viewPager::after{
+    background: #00BCB5;
 }
-.cont:nth-child(4) .viewPager{
-    background: linear-gradient(120deg, #003A5D 60%, white 100%);
+.cont:nth-child(2) .viewPager{
+    background: linear-gradient(120deg, #00BCB5 60%, white 100%);
 }
-.cont:nth-child(4) .viewPager::before{
-    border-color:transparent #01324f #01324f transparent;
+.cont:nth-child(2) .viewPager::before{
+    border-color:transparent #03a8a0 #03a8a0 transparent;
 }
 
 /* .cont3 */
 
-.cont:nth-child(2) .viewPager.open::before{
-    border-color: #082e44 #082e44 transparent transparent;
+.cont:nth-child(3) .viewPager.open::before{
+    border-color: #d34b0c #d34b0c transparent transparent;
 }
-.cont:nth-child(2) .viewPager::after{
-    background: #0b3954;
+.cont:nth-child(3) .viewPager::after{
+    background: #ff5100;
 }
-.cont:nth-child(2) .viewPager{
-    background: linear-gradient(120deg, #0b3954 60%, white 100%);
+.cont:nth-child(3) .viewPager{
+    background: linear-gradient(120deg, #ff5100 60%, white 100%);
 }
-.cont:nth-child(2) .viewPager::before{
-    border-color:transparent #082e44 #082e44 transparent;
+.cont:nth-child(3) .viewPager::before{
+    border-color:transparent #d34b0c #d34b0c transparent;
 }
 /**/
 
 
-.cont:nth-child(3) .viewPager.open::before{
-    border-color: #03a8a0 #03a8a0 transparent transparent;
-}
-.cont:nth-child(3) .viewPager::after{
-    background: #00BCB5;
-}
-.cont:nth-child(3) .viewPager{
-    background: linear-gradient(120deg, #00BCB5 60%, white 100%);
-}
-.cont:nth-child(3) .viewPager::before{
-    border-color:transparent #03a8a0 #03a8a0 transparent;
-}
 
 .content-card{
     position: relative;
@@ -234,5 +222,5 @@ body {
     cursor: grab;
 }
 #contentP:active{
-    cursor: grabbing;
+    cursor: grabbing !important;
 }

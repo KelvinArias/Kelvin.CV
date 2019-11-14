@@ -30,7 +30,7 @@ class Main extends React.Component {
             on: "off"
         });
     };
-    showMenu = () => {//esta es la funcion donde cambio de componente a mostrar
+    showMenu = () => {
         let y = this.state.show === "true" ? "false" : "true";
         this.setState({
             show: y
@@ -40,7 +40,7 @@ class Main extends React.Component {
     render() {
         return (
                 <main>
-                    <a href="https://github.com/KelvinxD21" className="con_git">
+                    <a href="https://github.com/KelvinxD21/Kelvin.CV" className="con_git">
                         <img src={git} class="git" alt="Github"/>
                         <p>Descargar vía Github</p>
                     </a>

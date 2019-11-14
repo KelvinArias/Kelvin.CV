@@ -22,9 +22,9 @@ import rea from '../../utilities/img/skills/react.svg'
 import noe from '../../utilities/img/skills/nodejs.png'
 
 const data_skills = [
+  {img:jav,habilities:"Javascript",text:"90 %",pl:10},
   {img:htm,habilities:"HTML",text:"95 %",pl:5},
   {img:css,habilities:"CSS",text:"95 %",pl:5},
-  {img:jav,habilities:"Javascript",text:"90 %",pl:10},
   {img:boo,habilities:"Bootstrap",text:"90 %",pl:10},
   {img:jqu,habilities:"Jquery",text:"90 %",pl:10},
   {img:mat,habilities:"Materialize",text:"80 %",pl:20},
