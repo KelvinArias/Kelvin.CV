@@ -11,7 +11,7 @@ import gi from '../../utilities/img/gift.svg';
 import tel from '../../utilities/img/telephone.svg';
 import ema from '../../utilities/img/email.svg';
 import web from '../../utilities/img/website.svg';
-import pf from '../../utilities/img/Mar-1024x575.jpg';
+import pf from '../../utilities/img/me.jpg';
 import { Overlay , Tooltip } from 'react-bootstrap'
 
 const Information = () => {
@@ -21,7 +21,7 @@ const Information = () => {
     <Col lg={4} className="over mb-5 mb-lg-0">
       <div className="overDiv">
         <div className="general_info_image">
-          <img src={pf}  alt="perfil"/>
+          <img src={pf}  alt="perfil" class="img-fluid" />
         </div>  
         <div className="general_content">
           <h3 className="general_tittle position-relative">Información General</h3>

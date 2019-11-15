@@ -1,9 +1,9 @@
 import React from 'react';
 import './education.css';
 import Title from '../router/title'
-import {Col}from 'react-bootstrap'
 import ti from '../../utilities/img/diploma.svg'
 import go from '../../utilities/img/mortarboard.svg'
+import {useSpring, animated} from 'react-spring'
 
 const subtitle = "Estudios Realizados";
 const title = "¿Dónde me forme?";
@@ -16,11 +16,12 @@ const study = [
 ]
 
 function Education() {
+  const fadeO = useSpring({opacity:1, from:{opacity:0}, duration:1000, config: { duration: 500 }})
   return (
-    <Col lg={8}>
+    <animated.div style={fadeO} className="col-lg-8">
       <Title subtitle={subtitle} title={title} text={text}></Title>
       <Studies data={study}></Studies>
-    </Col>
+    </animated.div>
   );
 }
 

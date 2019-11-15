@@ -40,7 +40,7 @@ class Main extends React.Component {
     render() {
         return (
                 <main>
-                    <a href="https://github.com/KelvinxD21/Kelvin.CV" className="con_git">
+                    <a href="https://github.com/KelvinxD21/Kelvin.CV" target="_blank" rel="noopener noreferrer" className="con_git">
                         <img src={git} className="git" alt="Github"/>
                         <p>Descargar vía Github</p>
                     </a>

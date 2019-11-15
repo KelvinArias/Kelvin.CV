@@ -1,7 +1,7 @@
 {
     "name": "kelvincv",
     "description": "Curriculum",
-    "version": "1.0.0",
+    "version": "0.1.0",
     "engines": {
       "node": "10.15.0"
     },
