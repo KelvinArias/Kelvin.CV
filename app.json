@@ -1,0 +1,55 @@
+{
+    "name": "kelvincv",
+    "description": "Curriculum",
+    "version": "1.0.0",
+    "engines": {
+      "node": "10.15.0"
+    },
+    "keywords": [
+      "productivity",
+      "HTML5",
+      "Sass",
+      "React",
+      "Javascript",
+      "Kelvin Arias",
+      "Curriculum"
+    ],
+    "website": "https://kelvincv.herokuapp.com/",
+    "repository": "https://github.com/jane-doe/small-sharp-tool",
+    "logo": "https://kelvincv.herokuapp.com/logo192.png",
+    "success_url": "/welcome",
+    "scripts": {
+      "postdeploy": "bundle exec rake bootstrap"
+    },
+    "env": {
+      "SECRET_TOKEN": {
+        "description": "A secret key for verifying the integrity of signed cookies.",
+        "generator": "secret"
+      },
+      "WEB_CONCURRENCY": {
+        "description": "The number of processes to run.",
+        "value": "5"
+      }
+    },
+    "formation": {
+      "web": {
+        "quantity": 1,
+        "size": "Performance-M"
+      }
+    },
+    "buildpacks": [
+        {
+            "url": "https://git.heroku.com/kelvincv.git"
+        },
+        {
+            "url": "heroku/nodejs"
+        }
+    ],
+    "environments": {
+      "test": {
+        "scripts": {
+          "test": "bundle exec rake test"
+        }
+      }
+    }
+  }
