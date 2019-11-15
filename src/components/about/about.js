@@ -1,8 +1,10 @@
 import React from 'react';
 import './about.css';
-import Habilities from './habilities';
+// import Habilities from './habilities';
+import Information from '../information/information';
 import Title from '../router/title';
 import { useSpring,animated } from 'react-spring';
+import { Row } from 'react-bootstrap';
 
 
 
@@ -15,10 +17,14 @@ const text = "Soy un joven venezolano de 22 años en busca de un empleo en el á
 const About = () => {
   const fadeO = useSpring({opacity:1, from:{opacity:0,}})
   return (
-    <animated.div className="col-lg-8" style={fadeO}>
-        <Title subtitle={subtitle} title={title} text={text}/>
-        <p className="mb-0">Los siguientes datos son tomados del test de Computrabajo:</p>
-        <Habilities/>
+    <animated.div className="col-lg-12" style={fadeO}>
+      <Row>
+        <Information/>
+        <animated.div className="col-lg-8 mx-auto" style={fadeO}>
+          <Title subtitle={subtitle} title={title} text={text}/>
+          {/* <Habilities/> */}
+        </animated.div > 
+      </Row>   
     </animated.div >
   );
 };

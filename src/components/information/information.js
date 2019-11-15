@@ -31,10 +31,10 @@ const Information = () => {
             <li><img src={gi} alt="icon3"/>Nacimiento: Septiembre 13, 1997</li>
             <li><img src={tel} alt="icon4"/>Teléfono: +51 935 859 529</li>
             <li><img src={ema} alt="icon5"/>Email: Kelvin727631@gmail.com</li>
-            <li><img src={web} alt="icon6"/>Portafolio: www.KelvinCV.com</li>
+            <li><img src={web} alt="icon6"/>Portafolio: kelvincv.herokuapp.com</li>
           </ul>
           <div className="social_box">
-            <div className="social_icons"><a href="https://www.facebook.com/kelvin.arias26"><img src={fb}  alt="Facebook"/></a></div>
+            <div className="social_icons"><a href="https://www.facebook.com/kelvin.arias26" target="_blank" rel="noopener noreferrer"><img src={fb}  alt="Facebook"/></a></div>
             <div ref={target} onClick={() => setShow(!show)} className="social_icons"><img src={wh}  alt="WhatsApp"/></div>
               <Overlay target={target.current} show={show} placement="top">
                 {props => (
@@ -43,8 +43,8 @@ const Information = () => {
                   </Tooltip>
                 )}
               </Overlay>
-            <div className="social_icons"><img src={tw}  alt="Twitter"/></div>
-            <div className="social_icons"><img src={lk}  alt="Linked in"/></div>
+            <div className="social_icons"><a href="https://twitter.com/KelvinArias21" target="_blank" rel="noopener noreferrer"><img src={tw}  alt="Twitter"/></a></div>
+            <div className="social_icons"><a href="https://www.linkedin.com/in/kelvin-arias-602865156/" target="_blank" rel="noopener noreferrer"><img src={lk}  alt="Linked in"/></a></div>
           </div>
         </div>
       </div>

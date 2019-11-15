@@ -1,5 +1,7 @@
 .about-me{
     text-align: justify;
+    line-height: 27px;
+    letter-spacing: .2px;
 }
 .loader .progressbar-text{
     position: absolute; 

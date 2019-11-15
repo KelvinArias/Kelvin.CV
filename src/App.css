@@ -77,6 +77,9 @@ body{
 .con_git{
     display: none;
 }
+.min-100{
+    min-height: calc(100vh - 116px);
+}
 @media(min-width:991px){
     .con_git {
         position: absolute;

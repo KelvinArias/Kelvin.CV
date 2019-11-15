@@ -47,7 +47,7 @@ const text = "Mis habilidades en estas tecnologias han sido aprendidas tanto en 
 const Skills = () => {
   const fadeO = useSpring({opacity:1, from:{opacity:0}, duration:1000, config: { duration: 500 }})
   return (
-    <animated.div style={fadeO} className="col-lg-8">
+    <animated.div style={fadeO} className="col-lg-8 mx-auto">
         <Title subtitle={subtitle} title={title} text={text} />
         <p>Los siguientes porcentajes se basan en horas trabajadas con cada tecnologia:</p>
         <Cont data={data_skills} />

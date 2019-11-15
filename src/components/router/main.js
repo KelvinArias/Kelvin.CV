@@ -2,7 +2,6 @@ import React, {lazy, Suspense} from 'react';
 import About from '../about/about';
 import Skills from '../skills/skills';
 import Education from '../education/education';
-import Information from '../information/information';
 import '../nav/nav.css';
 import {Navbar} from 'react-bootstrap'; 
 import {Nav} from 'react-bootstrap';
@@ -66,8 +65,7 @@ class Main extends React.Component {
                         </Navbar>
                     </Container>
                     <Container className={this.state.show}>
-                        <Row>
-                            <Information />
+                        <Row className="min-100">
                             <Suspense fallback={<div>Cargando...</div>}>
                                 {this.state.component}
                             </Suspense>

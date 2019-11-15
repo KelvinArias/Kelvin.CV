@@ -76,17 +76,17 @@ const descri = [
 const Jobs = () => {
   const fadeO = useSpring({opacity:1 , from:{opacity:0}, duration:1000, config: { duration: 500 }})
   return (
-    <animated.div style={fadeO} className="col-lg-8 will-change">
+    <animated.div style={fadeO} className="col-lg-8 mx-auto will-change">
         <Title subtitle={subtitle} title={title} text={text} />
         <Row>
           <Col md={6} className="cont mb-5">
-            <Jobsdeck social={social[1]} data={start} name={"Start Design Group"} description={descri[0]}></Jobsdeck>
+            <Jobsdeck social={social[1]} data={start} url={"http://startdesigngroup.com/"} name={"Start Design Group"} description={descri[0]}></Jobsdeck>
           </Col>
           <Col md={6} className="cont mb-5">
-            <Jobsdeck social={social[0]} data={intelix} name={"Intelix Synergy"} description={descri[1]}></Jobsdeck>
+            <Jobsdeck social={social[0]} data={intelix} url={"http://www.intelix.biz/site/public/"} name={"Intelix Synergy"} description={descri[1]}></Jobsdeck>
           </Col>
           <Col md={6} className="cont mb-5">
-            <Jobsdeck social={"none"} data={grupoIro} name={"GrupoIro"} description={descri[2]}></Jobsdeck>
+            <Jobsdeck social={"none"} data={grupoIro} url={"https://www.grupoiro.biz/"} name={"GrupoIro"} description={descri[2]}></Jobsdeck>
           </Col>
         </Row>
     </animated.div>

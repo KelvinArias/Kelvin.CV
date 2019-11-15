@@ -68,7 +68,7 @@ class Jobsdeck extends React.Component {
             <Viewpager img={this.props.data} />
           </div>
           <div className={this.state.active ? "viewPager open" :"viewPager"}>
-            <p >{this.props.name}</p>
+            <p ><a className="text-white" href={this.props.url}>{this.props.name}</a></p>
             <div onClick={() => this.setState({active: !this.state.active})} className={this.state.active ? "showMore open" :"showMore"}>
               <span></span>
               <span></span>  

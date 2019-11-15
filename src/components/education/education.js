@@ -18,7 +18,7 @@ const study = [
 function Education() {
   const fadeO = useSpring({opacity:1, from:{opacity:0}, duration:1000, config: { duration: 500 }})
   return (
-    <animated.div style={fadeO} className="col-lg-8">
+    <animated.div style={fadeO} className="col-lg-8 education mx-auto">
       <Title subtitle={subtitle} title={title} text={text}></Title>
       <Studies data={study}></Studies>
     </animated.div>
