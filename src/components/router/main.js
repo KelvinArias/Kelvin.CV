@@ -41,7 +41,7 @@ class Main extends React.Component {
         return (
                 <main>
                     <a href="https://github.com/KelvinxD21/Kelvin.CV" className="con_git">
-                        <img src={git} class="git" alt="Github"/>
+                        <img src={git} className="git" alt="Github"/>
                         <p>Descargar vía Github</p>
                     </a>
                     <Container className="con-nav">
